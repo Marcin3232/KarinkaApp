@@ -1,8 +1,15 @@
 <!-- navbar.component.html -->
 
-<nav class="bg-gray-800 p-4">
-  <div class="mx-auto flex justify-between items-center">
-    <div class="text-white font-bold text-lg">Logo</div>
+<nav class="bg-gray-800 pt-4 pb-4 md:p-4">
+  <div class="mx-auto flex justify-between items-center lg:container">
+    <!-- Tekst "Logo" -->
+    <div class="text-white font-bold text-lg flex">
+      <img
+        src="./../../../assets/icons/2093679.svg"
+        alt="Logo"
+        class="text-white h-8 w-9"
+      />KarinkaApp
+    </div>
     <button
       class="lg:hidden text-white focus:outline-none focus:text-white"
       (click)="toggleMenu()"
@@ -41,20 +48,51 @@
       </ng-template>
     </button>
     <div class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-6">
-      <a href="#" class="text-white">Home</a>
-      <a href="#" class="text-white">About</a>
-      <a href="#" class="text-white">Services</a>
-      <a href="#" class="text-white">Contact</a>
+      <a
+        href="#"
+        class="relative text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+        >Strona główna</a
+      >
+      <a
+        href="#"
+        class="relative text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+        >O stronie</a
+      >
+      <a
+        href="#"
+        class="relative text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+        >Najlepsze</a
+      >
+      <a
+        href="#"
+        class="relative text-white w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+        >Galeria</a
+      >
     </div>
   </div>
 
-  <div
-    class="lg:hidden fixed left-0 w-full bg-gray-800 z-50"
-    *ngIf="isMenuOpen"
-  >
-    <a href="#" class="block text-white p-4">Home</a>
-    <a href="#" class="block text-white p-4">About</a>
-    <a href="#" class="block text-white p-4">Services</a>
-    <a href="#" class="block text-white p-4">Contact</a>
+  <div class="lg:hidden left-0 w-full bg-gray-800 z-50" *ngIf="isMenuOpen">
+    <a
+      href="#"
+      class="relative text-white p-4 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+      >Strona główna</a
+    >
+    <a
+      href="#"
+      class="relative text-white p-4 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+      >O stronie</a
+    >
+    <a
+      href="#"
+      class="relative text-white p-4 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+      >Najlepsze</a
+    >
+    <a
+      href="#"
+      class="relative text-white p-4 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+      >Galeria</a
+    >
   </div>
+  <hr class="border-b-1 mt-1 border-white my-0" />
 </nav>
+<ng-content></ng-content>
