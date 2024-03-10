@@ -4,11 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
+import { GalleryComponent } from './layouts/gallery/gallery.component';
+import { HomeComponent } from './pages/home/home.component';
+import { BestOnTheBestComponent } from './pages/best-on-the-best/best-on-the-best.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    GalleryComponent,
+    HomeComponent,
+    BestOnTheBestComponent
   ],
   imports: [
     BrowserModule,
