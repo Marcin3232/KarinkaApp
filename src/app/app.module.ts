@@ -8,6 +8,7 @@ import { GalleryComponent } from './layouts/gallery/gallery.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BestOnTheBestComponent } from './pages/best-on-the-best/best-on-the-best.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ExamplesComponent } from './pages/examples/examples.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
     GalleryComponent,
     HomeComponent,
     BestOnTheBestComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ExamplesComponent
   ],
   imports: [
     BrowserModule,
